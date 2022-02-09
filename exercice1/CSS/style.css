@@ -1,0 +1,9 @@
+.bouton{
+    width: 15vw;
+    height: 4vh;
+}
+.container{
+    width: 100%;
+    background-color: rgb(255, 163, 127);
+    height: 15vh;
+}

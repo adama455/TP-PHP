@@ -1,0 +1,53 @@
+
+
+h4{
+    display: flex;
+    font-size: 4rem;
+    margin-left:6.5rem ;
+    position: absolute;
+}
+h4:hover{
+    color: green;
+}
+.formul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.champ{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -9rem 0 0 2rem;
+}
+label{
+    font-size: 1.5rem;
+}
+.affichErr{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    display: flex;
+    width: 8vw;
+    height: 6vh;
+    margin-left: 3rem;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.boutton{
+    display: flex;
+    height: 4vw;
+    width: 5vw;
+    margin-left: 3rem;
+    margin: 1rem;
+    margin: 8rem -0.4rem;
+    background-color: blue;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+    color: azure;
+    border: 2px solid blue;
+}

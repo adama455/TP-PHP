@@ -1,0 +1,55 @@
+
+.bouton button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    width: 20vw;
+    height: 7vh;
+
+}
+
+.aff-dim{
+    display: flex;
+    width: 80%;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder; 
+    font-size:2em;
+    background-color: white;
+    position: absolute;
+    margin-top: -44vh;
+    border: 2px solid black;
+    margin-bottom: 1rem;
+}
+form{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+}
+form .part1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form .part2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lab{
+    display: flex;
+    margin-bottom: 4.2rem;
+    
+   
+}
+.lab label{
+    display: flex;
+    position: absolute;
+    font-size:1.2em ;
+    margin-top: 2.5rem;
+}
+
+

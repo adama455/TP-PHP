@@ -1,0 +1,80 @@
+
+.libel h2{
+    margin-top: 4rem;
+
+}
+.equation h1{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 25vw;
+    height: 8vh;
+    border: 4px solid black;
+    border-radius: 1rem;
+    background-color: white;
+    position: absolute;
+    margin: 9rem 27rem ;
+    z-index: 1;
+    
+}
+.coef{
+    font-size: 3rem;
+    font-weight: bold;
+}
+label.nbre{
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.tableau{
+    display: flex;
+    justify-items:center ;
+    align-items: center;
+    width:100% ;
+    height: 25vh;
+    padding: 3rem;
+}
+tr{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+td{
+    display: flex;
+    width:30vw ; 
+   
+}
+.champ{
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    /* border: 1px solid black; */
+}
+input:hover{
+    border: 2px solid rgb(43, 253, 43);   
+}
+
+input{
+    border: 2px solid black;
+    width: 15vw;
+    height: 5vh;
+    font-size: 2rem;
+}
+.valid{
+    display: grid;
+    align-content: center;
+    text-align: center;
+    background-color: white;
+    width:8vw ; 
+    height: 3vw;
+    font-weight: bolder;
+    font-size: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+.valid:hover{
+    color: white;
+    background-color: blue;
+}

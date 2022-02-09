@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(217, 236, 252);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 80vh;
+    display: grid;
+}
+h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 4rem;
+}
+.container{
+    background-color: aqua;
+    border: 2px solid black ;
+    display: grid;
+    grid-column:auto ;
+    justify-self: center;
+    width: 50vw;
+    height: 25vh;
+
+
+}
+.nbre{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+}

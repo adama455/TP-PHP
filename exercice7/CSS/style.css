@@ -1,0 +1,79 @@
+body{
+    background-image:url('../nvlannee.jpg');
+    margin: 0;
+    padding: 0;
+    display: grid;
+    width: 100%;
+    height: 80vh;        
+}
+body::after{
+    content: " ";
+    background-color:rgba(0, 0, 0,0.8);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+.container{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    width: 65vw;
+    height: 50vh;
+    background-color: #13f1f1; 
+    opacity: 0.6;
+    border: 4px solid green;
+}
+h2{
+    display: flex;
+    font-size: 3rem;
+    margin-left:6.5rem ;
+    position: absolute;
+}
+h2:hover{
+    color: green;
+}
+.formul{
+    display: flex;
+}
+.champ{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -9rem 0 0 2rem;
+}
+label{
+    font-size: 1.5rem;
+}
+.affichErr{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    display: flex;
+    width: 8vw;
+    height: 6vh;
+    margin-left: 3rem;
+    margin: 1rem;
+    font-size: 2rem;
+}
+input:hover{
+    border: 2px solid green;
+}
+.boutton{
+    display: flex;
+    height: 6.5vh;
+    margin-left: 3rem;
+    margin: 1rem;
+    margin: 8rem -0.4rem;
+    background-color: green;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+    color: azure;
+    border: 2px solid green;
+}
