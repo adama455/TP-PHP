@@ -1,3 +1,4 @@
+
 <?php 
     function estVide($val):bool {
         return empty($val);
@@ -42,7 +43,7 @@
     function moyTab(array $tabPrmier ):float{
         $som=0;
         for ($i=0; $i <count($tabPrmier) ; $i++) { 
-            $som=$som+$i;
+            $som=$som+$tabPrmier[$i];
         }
         return $som/count($tabPrmier);
 
@@ -51,7 +52,7 @@
         $moy= moyTab($tabPrmier);
         $inferieur=[];
         foreach ($tabPrmier as $nbr) {
-            if ($nbr<$moy) {
+            if ($nbr<=$moy) {
                 $inferieur[]=$nbr;
             }
         }
@@ -62,13 +63,29 @@
         $moy= moyTab($tabPrmier);
         $superieur=[];
         foreach ($tabPrmier as $nbr) {
-            if ($nbr>$moy) {
+            if ($nbr>=$moy) {
                 $superieur[]=$nbr;
             }
         }
         return $superieur;
-
     }
+    function affTab( array $tableau):string{
+        // $tabAss=['premier', 'inferieur','superieur'];
+        $long=count($tableau);
+        $tabAss='<table>';
+            for ($i=1; $i <=$long ; $i++) { 
+                if ($i%12==1) {
+                    $tabAss.='<tr>';
+                }
+                $tabAss.='<td>'.$tableau[$i-1].'</td>';
+                if ($i%12==0) {
+                    $tabAss.='</tr>';
+                }
+            }
+        $tabAss.='</table>';
+        return $tabAss;
+    }
+
 
 
 
