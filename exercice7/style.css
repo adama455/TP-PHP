@@ -37,17 +37,12 @@ input{
     font-size: 2rem;
 }
 
-.boutton{
-    display: flex;
+.button {
     height: 4vw;
     width: 5vw;
-    margin-left: 3rem;
-    margin: 1rem;
-    margin: 8rem -0.4rem;
     background-color: blue;
     text-align: center;
-    align-items: center;
     font-weight: bolder;
-    color: azure;
+    color: azure; 
     border: 2px solid blue;
 }

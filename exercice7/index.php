@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Exercice7</title>
 </head>
 <body>
@@ -25,7 +25,7 @@
             <div class="champ">
                 <label for="jour">Jour:   </label>
                 <div class="affichErr">
-                    <input type="text" id="jour" name="jj" value="<?php if(!isset($_SESSION['error']['jj']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['jj']; else ''  ?>">
+                    <input type="text" id="jour" name="jj" value="<?php if(!isset($_SESSION['error']['jj']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['jj']; else  ?>">
                     <?php 
                         if(isset($_SESSION['err']['jj'])):?>
                         <span style="color:red">&nbsp;&nbsp;&nbsp;<?php echo   $_SESSION['err']['jj'] ?></span>
@@ -37,7 +37,7 @@
             <div  class="champ">
                 <label for="mois">Mois:  </label>
                 <div class="affichErr">
-                    <input type="text" id="mois" name="mm" value="<?php if(!isset($_SESSION['error']['mm']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['mm']; else ''  ?>">
+                    <input type="text" id="mois" name="mm" value="<?php if(!isset($_SESSION['error']['mm']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['mm']; else  ?>">
                     <?php 
                         if(isset($_SESSION['err']['mm'])):?>
                         <span style="color:red">&nbsp;&nbsp;&nbsp;<?php echo $_SESSION['err']['mm'] ?></span>
@@ -48,7 +48,7 @@
             <div class="champ">
                 <label for="annee">Année: </label>
                 <div class="affichErr">
-                    <input type="text" id="annee" name="aaaa" value="<?php if(!isset($_SESSION['error']['aaaa']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['aaaa']; else ''  ?>">
+                    <input type="text" id="annee" name="aaaa" value="<?php if(!isset($_SESSION['error']['aaaa']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['aaaa']; else  ?>">
                     <?php 
                         if(isset($_SESSION['err']['aaaa'])):?>
                         <span style="color:red">&nbsp;&nbsp;&nbsp;<?php echo $_SESSION['err']['aaaa'] ?></span>
