@@ -1,6 +1,7 @@
 body{
-    background-image: url('../images/fonds.jpg');
+    /* background-image: url('../images/fonds.jpg'); */
     background-attachment: fixed;
+    background-color: blueviolet;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -96,8 +97,14 @@ h2{
     font-size: 1.5rem;
 }
 .bouton{
-    width: 15vw;
-    height: 4vh;
+    width: 4vw;
+    height: 3vw;
+    margin-top: 2rem;
+    font-size: 1rem;
+    background-color: blue;
+    border: none;
+    color: white;
+    font-weight: bolder;
 }
 
 .titre h1{
@@ -147,6 +154,13 @@ input:hover{
     text-align: center;
     width: 100%;
     font-size: 4rem;
+}
+table{
+    border: 2px solid ;
+    width:100%;
+    font-size: 1.5rem;
+    color: white;
+    background-color: blue;    
 }
 
 

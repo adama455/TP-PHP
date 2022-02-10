@@ -18,9 +18,9 @@
         
     }
     function affichVal($nbr):void{
-        echo"<h2>La table de Multiplication de ".$nbr." est:</h2>";
+        echo"<h3>La table de Multiplication de ".$nbr." est:</h3>";
         for ($i=1; $i <=12; $i++) { 
-            echo '<div style="font-size:2em;" > '.$nbr.' x '.$i.' = '.$nbr*$i.'</div> '; 
+            echo '<div> '.$nbr.' x '.$i.' = '.$nbr*$i.'</div> '; 
         }
     }
 

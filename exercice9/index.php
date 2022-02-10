@@ -11,14 +11,13 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Exercice7</title>
+    <title>Exercice9</title>
 </head>
 <body>
-
     <?php 
         include('/opt/lampp/htdocs/TP/menu.php'); 
     ?>
-    <h2>EXERCICE7</h2>
+    <h2>EXERCICE9</h2>
     <div class="container">
         <h1>Entrer un nombre N</h1>
         <form  class="formul" action="controller.php" method="post">

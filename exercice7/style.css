@@ -10,10 +10,11 @@ h4:hover{
     color: green;
 }
 .formul{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+display: flex;
+flex-direction: column;
+width: 100%;
+justify-content: center;
+align-items: center;
 }
 .champ{
     display: flex;
