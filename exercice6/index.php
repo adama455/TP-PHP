@@ -1,8 +1,6 @@
-
 <?php
     session_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,9 +66,10 @@
        
     </form>
     <?php 
-        if(isset($_SESSION['erreur'])){
-            unset($_SESSION['erreur']);
-        }
+        if(isset($_SESSION['erreur']))
+            {
+                unset($_SESSION['erreur']);
+            }
     ?>    
 </div>  
 
