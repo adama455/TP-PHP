@@ -23,13 +23,6 @@
                 echo '<span class="champs-resultat"> Les nombres superieur à la moyenne du tableau sont: </span>';
                 echo affTab(superieurMoy($tab));
 
-                // $tab=tabPremier($nombre);
-                // echo'<h1>Les nombres Premier </h1><br>';
-                // print_r($tab) ;
-                // echo'<h1>Les nombres Premier </h1><br>';
-                // print_r(inferieurMoy($tab));
-                // echo'<h1>Les nombres Premier </h1><br>';
-                // print_r(superieurMoy($tab));
                 
             } else {
                 $_SESSION['err']=$tabErr;

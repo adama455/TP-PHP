@@ -31,7 +31,7 @@
    
     }
 
-    function tabPremier($nbr):array{
+     function tabPremier($nbr):array{
         $tabPrmier=[];
         for ($i=1; $i <= $nbr; $i++) { 
             if (nbrPremier($i)) {
