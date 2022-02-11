@@ -1,28 +1,29 @@
 body{
     /* background-image: url('../images/fonds.jpg'); */
     background-attachment: fixed;
-    background-color: blueviolet;
+    background-color:rgba(19, 74, 223, 0.7);
     margin: 0;
     padding: 0;
     width: 100%;
-    height: auto;
+    height: 100vh;
+    
     /* height: 80vh; */
     /* overflow: hidden; */
 
 }
-body::after{
+/* body::after{
     content: " ";
     background-color:rgba(19, 74, 223, 0.7);
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 1;
 
-}
+} */
 .menu{
     display: flex;
 }
@@ -81,6 +82,7 @@ h2{
     padding: 5rem;
     
 }
+
 /* form .formul{
     display: flex;
     align-items: center;
@@ -156,7 +158,7 @@ input:hover{
     font-size: 4rem;
 }
 table{
-    border: 2px solid ;
+    /* border: 2px solid ; */
     width:100%;
     font-size: 1.5rem;
     color: white;
