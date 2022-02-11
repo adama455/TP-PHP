@@ -22,7 +22,7 @@
 
     <div class="equation"><h2 class="animate__animated animate__zoomIn animate__repeat-2">EQUATION DU 2nd DEGRE</h2 ></div>
     <div class="container">
-    <form class="formulaire" action="controller.php" method="post" >
+    <form class="formulaire" action="" method="post" >
         <table class="tableau">
         <tr>
             <td class="libel"> <h2 class="animate__animated animate__slideInDown animate__repeat-2"> Renseignez les données ci-dessous:</h2><br /><br /></td>
@@ -72,6 +72,11 @@
             }
     ?>    
 </div>  
+<div class="">
+        <?php
+         include("controller.php");
+        ?>
+    </div>
 
 
 <?php 

@@ -3,8 +3,8 @@
     <?php 
         // include('/opt/lampp/htdocs/TP/menu.php');  
         include ('fonction.php'); 
-        session_start(); 
-        echo '<h2>SOLUSTION</h2><br><div class="container" style="font-size: 2rem;">';
+        // session_start(); 
+        echo '<div class="container" style="font-size: 2rem;">';
             if (isset($_POST['valider'])) {
                 $a= $_POST['a'];
                 $b= $_POST['b'];
@@ -20,8 +20,8 @@
                 } else{//s'il ya erreur dans le tableau
                     $_SESSION['erreur']=$tabErreur; //on les mets dans la Session
                     //var_dump( $_SESSION);
-                    header('location:index.php'); 
-                    exit();
+                    // header('location:index.php'); 
+                    // exit();
                 }
                 
             }
