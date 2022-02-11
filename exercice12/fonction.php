@@ -23,8 +23,8 @@
         3 =>'Marth',
         4 =>'April',
         5 =>'May',
-        6 =>'Jun',
-        7 =>'Julliet',
+        6 =>'June',
+        7 =>'July',
         8 =>'August',
         9 =>'September',
         10 =>'October',
@@ -33,6 +33,17 @@
 
     ];
 
+    function tabMois(array $choixMois):void {
+        global $moisFr, $moisEn;
+        $longTab=count($choixMois);
+        echo '<table style=" border-collapse: collapse; width:70%; height:60% ;">';
+            for ($i=1; $i <= $longTab; $i++) { 
+                if ($i%4==1) { echo '<tr style="border: 1px solid white;">';}
+                    echo '<td style="border: 1px solid white; height:60";>'.@$choixMois[$i].'</td>';
+                if ($i%4==0) { echo '</tr>';}
+            }
+        echo '</table>';   
+    }
     // function tabMois(array $choixMois):string{
     //     // global $moisFr, $moisEn;
     //     $longTab=count($choixMois);
@@ -45,22 +56,5 @@
     //     $tablM.='</table>';
     //     return $tablM;
     // }
-    function tabMois(array $choixMois):void {
-        global $moisFr, $moisEn;
-        $longTab=count($choixMois);
-        echo '<table border="2" width="60%">';
-            for ($i=0; $i <= $longTab; $i++) { 
-                if ($i%4==1) { echo '<tr>';}
-                    echo '<td>'.$choixMois[$i].'</td>';
-                if ($i%4==0) { echo '</tr>';}
-            }
-        echo '</table>';   
-    }
-
-
-    
-    
-
-
 
 ?>
