@@ -74,13 +74,9 @@
         $long=count($tableau);
         $tabAss='<table>';
             for ($i=1; $i <=$long ; $i++) { 
-                if ($i%12==1) {
-                    $tabAss.='<tr>';
-                }
-                $tabAss.='<td>'.$tableau[$i-1].'</td>';
-                if ($i%12==0) {
-                    $tabAss.='</tr>';
-                }
+                if ($i%12==1) {$tabAss.='<tr>';}
+                    $tabAss.='<td>'.$tableau[$i-1].'</td>';
+                if ($i%12==0) {$tabAss.='</tr>';}
             }
         $tabAss.='</table>';
         return $tabAss;
