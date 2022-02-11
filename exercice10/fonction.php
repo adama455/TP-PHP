@@ -5,13 +5,16 @@
     function estNbre($val):bool{
         return is_numeric($val);
     }
+    function estEntier($val):bool{
+        return is_int($val);
+    }
     
     
     function validValeur($val,string $key,array &$tabErr):void{
         if (estVide($val)) {
             $tabErr[$key]="vide!";
-        }else if (!estNbre($val)) {
-            $tabErr[$key]="Veullez saisir un nombre svp!";
+        }else if (!estNbre($val) && (!estEntier($val))) {
+            $tabErr[$key]="Veullez saisir un nombre entier svp!";
         }else if($val<=0) {
             $tabErr[$key]="Veullez saisir un nombre positif!";
         }
