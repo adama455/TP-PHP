@@ -3,7 +3,7 @@
 
     if (isset($_POST['correction'])) {
         $texte=$_POST['texte'];
-        echo '<div><textarea name="correcTexte" rows="40" cols="95">';
+        echo '<div ><textarea name="correcTexte" rows="35" cols="75">';
             // echo espaceChaine($texte);    
             echo espaceIni($texte) ;  
             echo pointfinal($texte); 
