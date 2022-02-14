@@ -1,6 +1,6 @@
 <div class="menu">
         <nav>
-            <img class="icon-acceuil" src="images/icon-2.png" alt="">
+            <a href="/opt/lampp/htdocs/TP/index.php/"><img class="icon-acceuil" src="images/icon-2.png" alt=""></a>
             <ul>
                 <li>
                     <a href="exercice1">

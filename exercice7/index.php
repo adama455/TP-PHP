@@ -48,7 +48,7 @@
             <div class="champ">
                 <label for="annee">Année: </label>
                 <div class="affichErr">
-                    <input type="text" id="annee" name="aaaa" value="<?php if(!isset($_SESSION['error']['aaaa']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['aaaa']; else  ?>">
+                    <input type="text" id="annee" name="aaaa" value="<?php if(!isset($_SESSION['err']['aaaa']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['aaaa']; else  ?>">
                     <?php 
                         if(isset($_SESSION['err']['aaaa'])):?>
                         <span style="color:red">&nbsp;&nbsp;&nbsp;<?php echo $_SESSION['err']['aaaa'] ?></span>

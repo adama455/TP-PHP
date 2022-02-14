@@ -25,7 +25,7 @@
         <form  class="formul" action="controller.php" method="post">
             <div class="champ">
                 <label for="nb_positif">N:</label>
-                <input type="text" id="nb_positif" name="nombre"  value="<?php if(!isset($_SESSION['error']['nombre']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['nombre']; else ''  ?>"> &nbsp;&nbsp; 
+                <input type="text" id="nb_positif" name="nombre"  value="<?php if(!isset($_SESSION['err']['nombre']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['nombre']; else ''  ?>"> &nbsp;&nbsp; 
                 <?php
                     if (isset($_SESSION['err']['nombre'])): ?>
                         <span style="color:red"><?php echo $_SESSION['err']['nombre'] ?></span>    

@@ -6,7 +6,6 @@
         return is_numeric($val);
     }
     
-    
     function validValeur($val,string $key,array &$tabErr):void{
         if (estVide($val)) {
             $tabErr[$key]="vide!";
@@ -20,10 +19,10 @@
     function affichVal($nbr):void{
         echo "<h2>les valeurs de 1 à  ".$nbr." sont:</h2>";
         echo '<ul style="font-size:2em;">';
-        for ($i=1; $i <=$nbr; $i++) { 
+            for ($i=1; $i <=$nbr; $i++) { 
 
-            echo '<li> '.$i.'</li> '; 
-        }
+                echo '<li> '.$i.'</li> '; 
+            }
         echo "</ul>";
 
     }

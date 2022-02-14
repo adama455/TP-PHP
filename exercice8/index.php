@@ -18,13 +18,13 @@
     <?php 
         include('/opt/lampp/htdocs/TP/menu.php'); 
     ?>
-    <h2>EXERCICE7</h2>
+    <h2>EXERCICE8</h2>
     <div class="container">
         <h1>Entrer un nombre N</h1>
         <form class="formul" action="controller.php" method="post">
             <div class="champ">
                 <label for="nb_positif">N:</label>
-                <input type="text" id="nb_positif" name="nombre" value='<?php if(!isset($_SESSION['error']['nombre']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['nombre']; else '' ?>'> &nbsp;&nbsp; 
+                <input type="text" id="nb_positif" name="nombre" value='<?php if(!isset($_SESSION['err']['nombre']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['nombre']; else '' ?>'> &nbsp;&nbsp; 
                 <?php
                     if (isset($_SESSION['err']['nombre'])): ?>
                         <span style="color:red"><?php echo $_SESSION['err']['nombre'] ?></span>    

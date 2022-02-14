@@ -29,7 +29,7 @@
         </tr>
         <tr>
             <td class="coef"> AX²</td>
-            <td class="champ" style="width:65%"><b><label for="nombre_a" class="nbre">A = </label></b><input type="text" id="nombre_a"  name="a" value="<?php if(!isset($_SESSION['error']['a']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['a']; else ''  ?>"> &nbsp;&nbsp;
+            <td class="champ" style="width:65%"><b><label for="nombre_a" class="nbre">A = </label></b><input type="text" id="nombre_a"  name="a" value="<?php if(!isset($_SESSION['erreur']['a']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['a']; else ''  ?>"> &nbsp;&nbsp;
                 <!-- //affichage de l'erreur du nombre a -->
                 <?php 
                     if(isset($_SESSION['erreur']['a'])):?>
@@ -39,7 +39,7 @@
         </tr>
         <tr>
             <td class="coef"> BX</td>
-            <td class="champ" style="width:65%"><b><label for="nombre_b" class="nbre">B = </label></b><input type="text" id="nombre_b"  name="b" value="<?php if(!isset($_SESSION['error']['b']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['b']; else ''  ?>"> &nbsp;&nbsp;
+            <td class="champ" style="width:65%"><b><label for="nombre_b" class="nbre">B = </label></b><input type="text" id="nombre_b"  name="b" value="<?php if(!isset($_SESSION['erreur']['b']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['b']; else ''  ?>"> &nbsp;&nbsp;
                     <!-- //affichage de l'erreur du nombre a -->
                 <?php 
                     if(isset($_SESSION['erreur']['b'])):?>
@@ -50,7 +50,7 @@
         </tr>
         <tr>
             <td class="coef"> C</td>
-            <td class="champ" style="width:65%"><b><label for="nombre_c" class="nbre">C = </label></b><input type="text" id="nombre_c"  name="c" value="<?php if(!isset($_SESSION['error']['c']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['c']; else ''  ?>"> &nbsp;&nbsp;
+            <td class="champ" style="width:65%"><b><label for="nombre_c" class="nbre">C = </label></b><input type="text" id="nombre_c"  name="c" value="<?php if(!isset($_SESSION['erreur']['c']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['c']; else ''  ?>"> &nbsp;&nbsp;
                 <!-- //affichage de l'erreur du nombre a -->
                 <?php 
                     if(isset($_SESSION['erreur']['c'])):?>
