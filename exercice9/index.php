@@ -37,6 +37,18 @@
             }
         ?>
     </div>
+    <div class="pagination" style="display: flex;justify-content: space-around;">
+        <a href="../exercice8/index.php">
+            <button style="font-size:30px">Precedent
+                <i class="material-icons"></i>
+            </button>
+        </a>
+        <a href="../exercice10/index.php">
+            <button style="font-size:30px">Suivant
+                <i class="material-icons"></i>
+            </button>
+        </a>
+    </div>
 <?php 
     include('/opt/lampp/htdocs/TP/footer.php'); 
 ?>

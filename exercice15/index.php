@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,44 +8,30 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Exercice12</title>
+    <title>Exercice13</title>
 </head>
 <body>
     <?php 
         include('/opt/lampp/htdocs/TP/menu.php'); 
     ?>
-    <h2>EXERCICE12</h2>
-    <div class="container">
-        <h3>Veullez choisir une langue</h3>
-        <form action="" method="post">
-            <label for=""> Choix :</label>
-            <select name="choix" style="width:8vw;height: 5vh; font-size:1em" >
-                <option value="f"> Francais</option>
-                <option value="a"> Anglais</option>
-            </select>
-            <br>
-            <br>
-            <button type="submit" name="valider" value="">valider</button>   
-        </form>   
+    <h2>EXERCICE15</h2>
+    <div class="container" >
+
     </div>
-    <div class="">
-        <?php
-         include("controller.php");
-        ?>
-    </div>
+
     <div class="pagination" style="display: flex;justify-content: space-around;">
-    <a href="../exercice11/index.php">
+    <a href="../exercice14/index.php">
         <button style="font-size:30px">Precedent
             <i class="material-icons"></i>
         </button>
     </a>
-    <a href="../exercice13/index.php">
+    <a href="../exercice16/index.php">
         <button style="font-size:30px">Suivant
             <i class="material-icons"></i>
         </button>
     </a>
 </div>
-<?php
-    require ("/opt/lampp/htdocs/TP/footer.php");    
-?>
 
+<?php 
+    include('/opt/lampp/htdocs/TP/footer.php'); 
+?>

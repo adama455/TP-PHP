@@ -6,6 +6,7 @@
     width: 15vw;
     height: 4vh;
     padding: 2.5rem;
+    /* margin-right: 5rem; */
 }
 
 .aff-cote{
@@ -18,7 +19,7 @@
     font-size:2em;
     background-color: white;
     position: absolute;
-    margin-top: -44vh;
+    margin-top: -20vh;
     border: 2px solid black;
 }
 form{
@@ -26,13 +27,4 @@ form{
     width: 80%;
     align-content: center;
     justify-content: space-evenly;
-}
-.lab{
-    display: flex;
-   
-}
-.lab label{
-    display: flex;
-    font-size:1.5em ;
-    margin-top: 1.75rem;
 }

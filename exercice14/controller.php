@@ -6,7 +6,6 @@
         $numValide="";
         $numNonValide="";
 
-        
             if (validate_phone_number($texte) == true) {
                 $numValide =$texte;
             } else {

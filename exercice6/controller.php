@@ -32,3 +32,16 @@
             } 
         echo '</div>'
     ?>
+        <div class="pagination" style="display: flex;justify-content: space-around;">
+        <a href="../exercice5/index.php">
+            <button style="font-size:30px">Precedent
+                <i class="material-icons"></i>
+            </button>
+        </a>
+        <a href="../exercice7/index.php">
+            <button style="font-size:30px">Suivant
+                <i class="material-icons"></i>
+            </button>
+        </a>
+        </div>
+

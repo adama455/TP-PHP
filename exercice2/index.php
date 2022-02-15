@@ -28,32 +28,45 @@ $larg=rand(VAL_MIN,30);
     <h2>EXERCICE2</h2>
     <div class="container">
         <div class="aff-dim">
-        <?php echo "Dimension: L= ".$long." , l= ".$larg. "<br>"; ?>
-
+            <?php echo "Dimension: L= ".$long." , l= ".$larg. "<br>"; ?>
         </div>
         <form class="formulaire"  name="fo" action="#" method="post">
 
-            <div class="lab">
+            <!-- <div class="lab">
                 <label for="Périmetre">Périmetre</label>
-            </div>
+            </div> -->
             <div class="bouton">
+                <label for="Périmetre">Périmetre</label>
                 <button><?php echo perimetre_rect($long,$larg);?></button>
             </div><br>
-            <div class="lab">
+            <!-- <div class="lab">
                 <label for="Périmetre">Surface</label>
-            </div>
-            <div class="bouton">    
+            </div> -->
+            <div class="bouton">   
+                <label for="Périmetre">Surface</label>
                 <button><?php echo surface_rect($long,$larg);?></button>
             </div><br>
-            <div class="lab">
+            <!-- <div class="lab">
                 <label for="Périmetre">Diagonal</label>
-            </div>
+            </div> -->
             <div class="bouton">
+                <label for="Périmetre">Diagonal</label>
                 <button><?php echo diagonal_rect($long,$larg);?></button>
             </div>
         </form>
     </div>
-    
-        <?php 
-            include('/opt/lampp/htdocs/TP/footer.php');
-        ?>
+    <div class="pagination" style="display: flex;justify-content: space-around;">
+        <a href="../exercice1/index.php">
+            <button style="font-size:30px">Precedent
+                <i class="material-icons"></i>
+            </button>
+        </a>
+        <a href="../exercice3/index.php">
+            <button style="font-size:30px">Suivant
+                <i class="material-icons"></i>
+            </button>
+        </a>
+    </div>
+<?php 
+    include('/opt/lampp/htdocs/TP/footer.php');
+?>

@@ -21,6 +21,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -32,7 +33,7 @@
 
     <title>Entete</title>
     </head>
-    <!-- <body>  -->
+    <body>  -->
     <?php include "/opt/lampp/htdocs/TP/menu.php";?>
     <h2>EXERCICE1</h2>
     <div class="container">
@@ -41,25 +42,36 @@
         </div>
         <form class="formul"  name="fo" action="#" method="post">
 
-            <div class="lab">
+            <!-- <div class="lab">
                 <label for="Périmetre">Périmetre</label>
-            </div>
+            </div> -->
             <div class="bouton">
+                <label class="lab" for="Périmetre">Périmetre</label>
                 <button><?php echo perimetre($cote);?></button>
             </div><br>
-            <div class="lab">
+            <!-- <div class="lab">
                 <label for="Périmetre">Surface</label>
-            </div>
-            <div class="bouton">    
+            </div> -->
+            <div class="bouton">  
+                <label class="lab" for="Périmetre">Surface</label>
                 <button><?php echo surface($cote);?></button>
             </div><br>
-            <div class="lab">
+            <!-- <div class="lab">
                 <label for="Périmetre">Diagonal</label>
-            </div>
+            </div> -->
             <div class="bouton">
+                <label class="lab" for="Périmetre">Diagonal</label>     
                 <button><?php echo diagonal($cote);?></button>
             </div>
         </form>
+    </div>
+    <div class="pagination" style="display: flex;justify-content: space-around;">
+        <a href="../exercice2/index.php">
+            <button style="font-size:30px">Suivant
+                <i class="material-icons"></i>
+            </button>
+        </a>
+        <!-- <a href="../TP/index.php">Precedant</a> -->
     </div>
 <?php
     //chargement du header

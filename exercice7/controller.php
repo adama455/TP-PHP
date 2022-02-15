@@ -11,13 +11,13 @@
             $_SESSION['post']=$_POST;
             $tabErr=[];
 
-            validValeur($jj,'jj',$tabErr);
-            validValeur($mm,'mm',$tabErr);
-            validValeur($aaaa,'aaaa',$tabErr);
+            dateValide($jj,'jj',$tabErr);
+            dateValide($mm,'mm',$tabErr);
+            datevValide($aaaa,'aaaa',$tabErr);
 
-            if (count($tabErr)==0) {
-                dateSuivant($jj,$mm,$aaaa);
-                datePrecedent($jj,$mm,$aaaa);
+            if (datevValide($jj,$mm,$aaaa)) {
+                echo dateSuivant($jj,$mm,$aaaa);
+                echo datePrecedent($jj,$mm,$aaaa);
 
             } else {
                 $_SESSION['err']=$tabErr;

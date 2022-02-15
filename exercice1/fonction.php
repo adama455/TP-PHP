@@ -28,4 +28,6 @@
     function diagonal(int $cote):float{
         return sqrt(2*pow($cote,2));
     }
+
+
 ?>

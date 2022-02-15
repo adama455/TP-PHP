@@ -1,15 +1,30 @@
 <?php
-    function espaceIni($chaine):string{
-        $maj=preg_replace('/\s\s+/', ' ',trim($chaine) );
-        return $maj;
+    function espaceIni($texte){
+        return preg_replace('/\s+/', ' ',trim($texte) );
+        
     }
-    function pointfinal($chaine):string{
-        $point=chunk_split($chaine,25,".");
-        return $point;
+    function decoupTexte($texte){
+        return wordwrap($texte, 25, "\n");
+
     }
-    function preMaj($chaine):string{
-        $letter=ucfirst($chaine);
-        return $letter;
-    }
+
+    // function correctTexte($texte){
+    // $str=str_replace(array('#', "'", ";","&","-",'"',"(", '{','[',']','}','@',')','!','^','=','+','~','*','%','$','£','µ','¨'),' ', $texte);
+    // if (espaceIni($texte) && decoupTexte($texte)&&$str ) {
+    //         echo $texte;
+    //     }
+    // }
+    // ucfirst($texte);
+
+    // str_replace(array('#', "'", ";","&","-",'"',"(", '{','[',']','}','@',')','!','^','=','+','~','*','%','$','£','µ','¨'),' ', $texte);
+   
+
+
+    // function remove_sp_chr($str)
+    // {
+    //     $result = str_replace(array("#", "'", ";"), '', $str);
+    //     return $result;
+    // }
+
     
-?>
+?>  

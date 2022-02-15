@@ -19,7 +19,7 @@
 <?php 
     include('/opt/lampp/htdocs/TP/menu.php'); 
 ?>
-    <h2>EXERCICE11</h2>
+    <h2>EXERCICE17</h2>
     <div class="container">
         <h1>Entrer un nombre N</h1>
         <form  class="formul" action="controller.php" method="post">
@@ -40,12 +40,12 @@
         ?>
     </div>
     <div class="pagination" style="display: flex;justify-content: space-around;">
-    <a href="../exercice10/index.php">
+    <a href="../exercice16/index.php">
         <button style="font-size:30px">Precedent
             <i class="material-icons"></i>
         </button>
     </a>
-    <a href="../exercice12/index.php">
+    <a href="../index.php">
         <button style="font-size:30px">Suivant
             <i class="material-icons"></i>
         </button>

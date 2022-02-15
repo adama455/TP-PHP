@@ -22,14 +22,14 @@
 
     <div class="equation"><h2 class="animate__animated animate__zoomIn animate__repeat-2">EQUATION DU 2nd DEGRE</h2 ></div>
     <div class="container">
-    <form class="formulaire" action="" method="post" >
+    <form class="formulaire" action="controller.php" method="post" >
         <table class="tableau">
         <tr>
             <td class="libel"> <h2 class="animate__animated animate__slideInDown animate__repeat-2"> Renseignez les données ci-dessous:</h2><br /><br /></td>
         </tr>
         <tr>
             <td class="coef"> AX²</td>
-            <td class="champ" style="width:65%"><b><label for="nombre_a" class="nbre">A = </label></b><input type="text" id="nombre_a"  name="a" value="<?php if(!isset($_SESSION['erreur']['a']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['a']; else ''  ?>"> &nbsp;&nbsp;
+            <td class="champ" style="width:65%"><b><label for="nombre_a" class="nbre">A = </label></b><input type="text" id="nombre_a"  name="a" value="<?php if(!isset($_SESSION['err']['a']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['a']; else ''  ?>"> &nbsp;&nbsp;
                 <!-- //affichage de l'erreur du nombre a -->
                 <?php 
                     if(isset($_SESSION['erreur']['a'])):?>
@@ -39,7 +39,7 @@
         </tr>
         <tr>
             <td class="coef"> BX</td>
-            <td class="champ" style="width:65%"><b><label for="nombre_b" class="nbre">B = </label></b><input type="text" id="nombre_b"  name="b" value="<?php if(!isset($_SESSION['erreur']['b']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['b']; else ''  ?>"> &nbsp;&nbsp;
+            <td class="champ" style="width:65%"><b><label for="nombre_b" class="nbre">B = </label></b><input type="text" id="nombre_b"  name="b" value="<?php if(!isset($_SESSION['err']['b']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['b']; else ''  ?>"> &nbsp;&nbsp;
                     <!-- //affichage de l'erreur du nombre a -->
                 <?php 
                     if(isset($_SESSION['erreur']['b'])):?>
@@ -50,7 +50,7 @@
         </tr>
         <tr>
             <td class="coef"> C</td>
-            <td class="champ" style="width:65%"><b><label for="nombre_c" class="nbre">C = </label></b><input type="text" id="nombre_c"  name="c" value="<?php if(!isset($_SESSION['erreur']['c']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['c']; else ''  ?>"> &nbsp;&nbsp;
+            <td class="champ" style="width:65%"><b><label for="nombre_c" class="nbre">C = </label></b><input type="text" id="nombre_c"  name="c" value="<?php if(!isset($_SESSION['err']['c']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['c']; else ''  ?>"> &nbsp;&nbsp;
                 <!-- //affichage de l'erreur du nombre a -->
                 <?php 
                     if(isset($_SESSION['erreur']['c'])):?>
@@ -65,20 +65,30 @@
     </table>
        
     </form>
+   
     <?php 
         if(isset($_SESSION['erreur']))
             {
                 unset($_SESSION['erreur']);
             }
     ?>    
-</div>  
-<div class="">
-        <?php
-         include("controller.php");
-        ?>
+</div> 
+
+    <div class="pagination" style="display: flex;justify-content: space-around;">
+        <a href="../exercice5/index.php">
+            <button style="font-size:30px">Precedent
+                <i class="material-icons"></i>
+            </button>
+        </a>
+        <a href="../exercice7/index.php">
+            <button style="font-size:30px">Suivant
+                <i class="material-icons"></i>
+            </button>
+        </a>
     </div>
 
 
 <?php 
     include('/opt/lampp/htdocs/TP/footer.php'); 
 ?>
+

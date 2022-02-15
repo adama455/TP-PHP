@@ -18,7 +18,7 @@
     font-size:2em;
     background-color: white;
     position: absolute;
-    margin-top: -44vh;
+    margin-top: -10rem;
     border: 2px solid black;
 }
 form{
@@ -27,12 +27,14 @@ form{
     align-content: center;
     justify-content: space-evenly;
 }
-.lab{
+.pagination{
     display: flex;
-   
+    justify-content: flex-end;
 }
-.lab label{
-    display: flex;
-    font-size:1.5em ;
-    margin-top: 1.75rem;
+a .button{
+    font-size: 2rem;
+    background-color: blue;
+    height: 3rem;
+    width: 7rem;
 }
+
